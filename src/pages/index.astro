@@ -1,9 +1,68 @@
 ---
-import BaseLayout from "../layouts/baseLayout.astro";
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Heading from "../components/Heading.astro";
+import Button from "../components/Button.astro";
+import { Icon } from "astro-icon/components";
+import Counter from "../components/Counter";
 ---
 
 <BaseLayout title="Home">
-	<div class="wrapper">
-		<h1>Home</h1>
+	<div class="wrapper flow">
+		<Heading level="h1" size="h2">Astro Components</Heading>
+		<p>
+			This project goes over some component basics based on Coding In
+			Public's <a href="https://learnastro.dev/">series</a>. Here are
+			topics to explore:
+		</p>
+		<ul>
+			<li>Components and Typescript support</li>
+			<li>Button Component Example</li>
+			<li>Heading Component Example</li>
+			<li>Astro Islands & Components</li>
+		</ul>
+		<Button theme="primary"> Click Me </Button>
+		<Button theme="secondary" mode="icon">
+			<Icon name="check" />
+		</Button>
+
+		<Heading level="h2" size="h3">Astro Islands</Heading>
+		<p>
+			Astro allows you to create components that are not rendered on
+			server, but instead rendered on client. This is useful for
+			interactive components that can slow down initial page loads, such
+			as a React, Vue, or Svelte component.
+		</p>
+
+		<Heading level="h2" size="h3">Filler Text</Heading>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+			vitae accusantium hic tempora ut explicabo dolorem! Nisi, quos
+			veniam sed quae eos non assumenda quaerat praesentium alias maiores
+			culpa totam distinctio adipisci hic quidem saepe exercitationem ex
+			quibusdam veritatis quis quas magni, facilis voluptates. Obcaecati
+			esse amet adipisci perspiciatis, molestiae sed nisi possimus error.
+			Iure quae possimus autem, numquam necessitatibus doloribus nobis
+			eligendi ullam magni labore, a voluptate odit, qui vero recusandae
+			vitae hic animi est odio facere! Totam, nostrum commodi! Aliquam
+			possimus cupiditate ipsam aliquid neque saepe incidunt vitae,
+			voluptatibus dolore blanditiis. Laboriosam, consequuntur perferendis
+			veniam omnis ex totam.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente
+			vitae accusantium hic tempora ut explicabo dolorem! Nisi, quos
+			veniam sed quae eos non assumenda quaerat praesentium alias maiores
+			culpa totam distinctio adipisci hic quidem saepe exercitationem ex
+			quibusdam veritatis quis quas magni, facilis voluptates. Obcaecati
+			esse amet adipisci perspiciatis, molestiae sed nisi possimus error.
+			Iure quae possimus autem, numquam necessitatibus doloribus nobis
+			eligendi ullam magni labore, a voluptate odit, qui vero recusandae
+			vitae hic animi est odio facere! Totam, nostrum commodi! Aliquam
+			possimus cupiditate ipsam aliquid neque saepe incidunt vitae,
+			voluptatibus dolore blanditiis. Laboriosam, consequuntur perferendis
+			veniam omnis ex totam.
+		</p>
+
+		<Counter client:visible />
 	</div>
 </BaseLayout>
