@@ -1,0 +1,50 @@
+// img reset
+img,
+picture,
+video,
+canvas,
+svg {
+	max-width: 100%;
+	display: block;
+}
+
+// link reset
+a {
+	text-decoration: none;
+}
+
+// form controls: inherit fonts
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+// text: overflows and wrapping
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+	margin: 0;
+}
+p {
+	text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	text-wrap: balance;
+}
+// list reset
+ul[role="list"],
+ol[role="list"] {
+	list-style: none;
+}

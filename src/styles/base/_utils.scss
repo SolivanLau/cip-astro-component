@@ -1,0 +1,84 @@
+// responsive wrapper container
+.wrapper {
+	width: min(100% - 2rem, 1100px);
+	margin-inline: auto;
+}
+
+// flow: natural flow of elements
+.flow > * + * {
+	--_flow-spacer: 1em;
+	margin-top: var(--_flow-spacer, 1em);
+}
+// background color
+.background {
+	background-color: var(--clr-white-blue);
+}
+
+// spacing
+.mt-200 {
+	margin-block-start: var(--spc-200);
+}
+
+.mt-300 {
+	margin-block-start: var(--spc-300);
+}
+
+.mt-400 {
+	margin-block-start: var(--spc-400);
+}
+
+.mt-500 {
+	margin-block-start: var(--spc-500);
+}
+
+.mt-600 {
+	margin-block-start: var(--spc-600);
+}
+
+.mt-700 {
+	margin-block-start: var(--spc-700);
+}
+
+.mt-800 {
+	margin-block-start: var(--spc-800);
+}
+
+.mb-200 {
+	margin-block-end: var(--spc-200);
+}
+
+.mb-300 {
+	margin-block-end: var(--spc-300);
+}
+
+.mb-400 {
+	margin-block-end: var(--spc-400);
+}
+
+.mb-500 {
+	margin-block-end: var(--spc-500);
+}
+
+.mb-600 {
+	margin-block-end: var(--spc-600);
+}
+
+.mb-700 {
+	margin-block-end: var(--spc-700);
+}
+
+.mb-800 {
+	margin-block-end: var(--spc-800);
+}
+
+// LAYOUTS
+// grid
+.grid {
+	display: grid;
+}
+
+.grid--thirds {
+	@media (min-width: 768px) {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}

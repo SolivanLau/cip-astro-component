@@ -1,0 +1,43 @@
+:root {
+	// COLORS
+	// neutrals
+	--clr-white: #ffffff;
+	--clr-white-blue: #f7f8fc;
+	--clr-grey-blue: #545d7a;
+	--clr-black-blue: #10182f;
+	// brand
+	--clr-teal: #47bcd4;
+	--clr-sky-blue: #5e76bf;
+	--clr-magenta: #cd5b9f;
+	// gradients
+	--clr-grad-primary: linear-gradient(
+		135deg,
+		rgba(23, 33, 63, 35%) 0%,
+		rgba(68, 0, 73, 35%) 100%
+	);
+	// shadows
+	--clr-shadow: 3px 3px 20px #070b1543;
+	// assignment
+	--clr-text--dark: var(--clr-black-blue);
+	--clr-text--light: var(--clr-white);
+	--clr-text--muted: var(--clr-grey-blue);
+	// text
+	--fm-primary: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+		Roboto;
+	--fs-200: calc(12rem / 16);
+	--fs-300: calc(14rem / 16);
+	--fs-400: calc(16rem / 16);
+	--fs-500: calc(18rem / 16);
+	// border
+	--bdr-radius: 12px;
+	--bdr-radius--pill: 500px;
+	--bdr-radius--circle: 50%;
+	// spacing
+	--spc-200: calc(8rem / 16);
+	--spc-300: calc(12rem / 16);
+	--spc-400: calc(16rem / 16);
+	--spc-500: calc(20rem / 16);
+	--spc-600: calc(24rem / 16);
+	--spc-700: calc(28rem / 16);
+	--spc-800: calc(32rem / 16);
+}
